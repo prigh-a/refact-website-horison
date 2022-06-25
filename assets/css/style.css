@@ -39,6 +39,7 @@ body {
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
+    font-size:16px
 }
 
 a {
@@ -163,6 +164,7 @@ p {
 
 .search-engine-optimization img {
     max-height: 200px;
+    margin-right: 5px;
 }
 
 .online-reputation-management img {
@@ -198,3 +200,67 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .footer h2 {
+        font-size: 10px;
+    }
+    .footer {
+        padding: 30px;
+        clear: both;
+        text-align: left;
+    }
+    header div ul {
+        list-style-type: none;
+        /* float: right; */
+        width: 51%;
+        font-size: 14px;
+    }
+    header div ul li {
+        flex: 1; /* each takes 33.33% of the parent's width; adjust to your needs */
+        display: flex;
+        justify-content: center; /* centers them horizontally (instead of text-align: center) */
+        align-items: center; /* and vertically */
+        height: 50px;
+        font-size:16px 
+    }
+  }
+
+
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    header div ul {
+        list-style-type: none;
+        /* float: right; */
+        width: 51%;
+        font-size: 14px;
+    }
+    header div ul li {
+        flex: 1; /* each takes 33.33% of the parent's width; adjust to your needs */
+        display: flex;
+        justify-content: center; /* centers them horizontally (instead of text-align: center) */
+        align-items: center; /* and vertically */
+        height: 50px;
+        font-size:14px 
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    header div ul li {
+        flex: 1; /* each takes 33.33% of the parent's width; adjust to your needs */
+        display: flex;
+        justify-content: center; /* centers them horizontally (instead of text-align: center) */
+        align-items: center; /* and vertically */
+        height: 50px;
+        font-size:14px 
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
